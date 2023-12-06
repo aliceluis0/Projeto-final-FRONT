@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Projeto Final 2023</title>
+
+    <!-- Google Fonts - Robot-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap CSS-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <!-- Bootstrap Icons-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+    <!-- CSS do projeto -->
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+
+<header>
+    <!-- Definição da barra de navegação -->
+    <nav class="navbar navbar-expand-lg fixed-top bg-stilo-nav">
+        <section class="container py-3">
+            <a href="#" class="navbar-brand">
+                <i class="bi bi-car-front"></i>
+                <span>ShopCar</span>
+
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar-items"
+                    aria-controls="navbar-items" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="bi bi-list"></i>
+                </button>
+            </a>
+
+
+
+
+            <!-- Criação do botão para representar o menu hamburguer -->
+            <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar-items"
+                aria-controls="navbar-items" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="bi bi-list"></i>
+            </button>
+
+            <!-- Definição dos links do menu -->
+            <section class="collapse navbar-collapse" id="navbar-items">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+
+
+
+                    <li class="nav-item"><a class="nav-link" href="#manga-container">Produtos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#col-12-container">Projetos <i class="bi bi-cart4"></i></a></li>
+                    
+                </ul>
+            </section>
+        </section>
+
+
+    </nav>
+</header>
+
+<body>
+    <!-- Definição do Slider -->
+    <section class="container" id="slider-container">
+        <section class="carousel slide" id="slider" data-bs-interval="1500" data-bs-ride="carousel">
+            <section class="carousel-indicators">
+
+                <!-- Criação dos botões que representam as imagens-->
+                <button type="button" class="active" data-bs-target="#slider" data-bs-slide-to="0" aria-current="true"
+                    aria-label="Slide 1"></button>
+
+                <button type="button" data-bs-target="#slider" data-bs-slide-to="1" aria-label="Slide 2"></button>
+
+                <button type="button" data-bs-target="#slider" data-bs-slide-to="2" aria-label="Slide 3"></button>
+
+                <button type="button" data-bs-target="#slider" data-bs-slide-to="3" aria-label="Slide 4"></button>
+            </section>
+
+            <!-- Definição do conteúdo do carrousel -->
+            <section class="carousel-inner">
+                <section class="carousel-item active">
+                    <img src="./images/bmw novo2.jpg" alt="Imagem 1" class="d-block w-100">
+                    <section class="carousel-caption">
+
+                    </section>
+                </section>
+
+                <section class="carousel-item">
+                    <img src="./images/carro 2.jpg" alt="imagem 2" class="d-block w-100">
+                    <section class="carousel-caption">
+
+
+                    </section>
+                </section>
+
+                <section class="carousel-item">
+                    <img src="./images/carro 3.jpeg" alt="imagem 3" class="d-block w-100">
+                    <section class="carousel-caption">
+
+
+                    </section>
+                </section>
+
+                <section class="carousel-item">
+                    <img src="./images/carrofabio.jpg" alt="imagem 4" class="d-block w-100">
+                    <section class="carousel-caption">
+                        >
+
+                    </section>
+                </section>
+            </section>
+
+            <button type="button" class="carousel-control-prev" data-bs-target="#slider" data-bs-slide="prev">
+                <i class="bi bi-arrow-counterclockwise"></i>
+                <span class="visually-hidden">Previous</span>
+            </button>
+
+            <button type="button" class="carousel-control-next" data-bs-target="#slider" data-bs-slide="next">
+                <i class="bi bi-arrow-clockwise"></i>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </section>
+
+        <!-- Criação dos cards / banners-->
+        <section class="col-12 col-md-10 offset-1" id="mini-banners">
+            <section class="row justify-content-center">
+
+                <!-- Primeiro card -->
+                <section class="col-12 col-md-3">
+                    <section class="card text-center">
+                        <i class="bi bi-cart4"></i>
+                        <section class="card-body">
+                            <h5 class="card-title primary-color">Vendas</h5>
+                            <p class="card-text secondary-color">Procurando um carro novo? Temos uma grande seleção de
+                                veículos de alta qualidade!
+                                Venha conferir nossa variedade de carros, preços competitivos e excelentes condições de
+                                financiamento. Encontre o carro dos seus sonhos!</p>
+                            <a href="#" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#exampleModal">Veja
+                                mais</a>
+                        </section>
+                    </section>
+                </section>
+
+
+
+                <!-- Terceiro card -->
+                <section class="col-12 col-md-3">
+                    <section class="card text-center">
+                        <i class="bi bi-backpack2"></i>
+                        <section class="card-body">
+                            <h5 class="card-title primary-color">Meios de Pagamentos </h5>
+                            <p class="card-text secondary-color">Aceitamos PIX, dinheiro, cartão de crédito e oferecemos
+                                parcelamento para facilitar o processo de aluguel. Queremos garantir a comodidade dos
+                                nossos clientes ao escolher a forma de pagamento que mais lhes convém.</p>
+                            <a href="#" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#modal3">Veja
+                                mesmo</a>
+                        </section>
+                    </section>
+                </section>
+
+                <!-- Quarto card -->
+                <section class="col-12 col-md-3">
+                    <section class="card text-center">
+                        <i class="bi bi-bar-chart-line"></i>
+                        <section class="card-body">
+                            <h5 class="card-title primary-color">Contato</h5>
+                            <p class="card-text secondary-color">Estamos presentes em várias redes sociais como,
+                                Instagram (@EliteMotors), WhatsApp (17 991480671) e Twitter. Siga-nos nessas
+                                plataformas para ficar por dentro das novidades, promoções e interagir conosco. </p>
+                            <a href="#" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#modal4">Ligue
+                                Agora</a>
+                        </section>
+                    </section>
+                </section>
+
+                <!--modal-->
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+
+                                <form>
+                                    <div class="mb-3">
+                                        <label for="exampleInputEmail1" class="form-label">Email address</label>
+                                        <input type="email" class="form-control" id="exampleInputEmail1"
+                                            aria-describedby="emailHelp">
+                                        <div id="emailHelp" class="form-text">We'll never share your email with anyone
+                                            else.</div>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="exampleInputPassword1" class="form-label">Password</label>
+                                        <input type="password" class="form-control" id="exampleInputPassword1">
+                                    </div>
+                                    <div class="mb-3 form-check">
+                                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                        <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                                    </div>
+                                    <button type="submit" class="btn btn-primary">Submit</button>
+                                </form>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-primary">Save changes</button>
+                            </div>
+                        </div>
+
+                        <!-- Final dos cards -->
+            </section>
+        </section>
+    </section>
+
+    <!-- Destaques -->
+    <!-- Container dos desatques -->
+
+
+    <!-- Início das imagens-->
+    <section class="col-12" id="featured-images">
+        <section class="row g-4">
+
+            <section class="col-12 col-md-4">
+                <img src="./images/CARRO 1.jpeg" alt="" class="img-fluid">
+                <section class="banner-content">
+                    <p>Carro Esportivo</p>
+                    <h3>Mercedes AMG GT 4</h3>
+                </section>
+            </section>
+
+            <section class="col-12 col-md-4">
+                <img src="./images/CARRO 2 (2).jpg" alt="" class="img-fluid">
+                <section class="banner-content">
+                    <p>Carro Esportivo</p>
+                    <h3>BMW M4 Convertible</h3>
+                </section>
+            </section>
+
+            <section class="col-12 col-md-4">
+                <img src="./images/CARRO 3.jpg" alt="" class="img-fluid">
+                <section class="banner-content">
+                    <p>Carro de Luxo</p>
+                    <h3>McLaren 765LT</h3>
+                </section>
+            </section>
+
+            <section class="col-12 col-md-4">
+                <img src="./images/carro 4.jpeg" alt="" class="img-fluid">
+                <section class="banner-content">
+                    <p>Carro de Luxo</p>
+                    <h3>Astron Martin</h3>
+                </section>
+            </section>
+
+            <section class="col-12 col-md-4">
+                <img src="./images/CARRO 4.jpg" alt="" class="img-fluid">
+                <section class="banner-content">
+                    <p>Carro de Luxo</p>
+                    <h3>Mecedes-Benz</h3>
+                </section>
+            </section>
+
+            <section class="col-12 col-md-4">
+                <img src="./images/CARRO 5.jpg" al="" class="img-fluid">
+                <section class="banner-content">
+                    <p>Carro Esportivo</p>
+                    <h3>Lotus Evija</h3>
+                </section>
+            </section>
+
+
+        </section>
+    </section>
+
+    <!-- Fim do container destaques -->
+
+
+    <!-- Informações -->
+    <section class="container" id="info-container">
+        <section class="col-12">
+            <h2 class="title primary-color">Informações</h2>
+            <p class="subtitle-secondary-color text-dark">Conheça nossos Carros </p>
+        </section>
+
+        <section class="col-12">
+            <section class="row align-content-md-start">
+
+                <section class="col-12 col-md-5">
+                    <p>Bem-vindo à nossa loja de carros, onde os sonhos automotivos se tornam realidade! Oferecemos uma
+                        ampla seleção de veículos de qualidade, desde carros compactos e luxuosos. Compre com
+                        confiança, sabendo que cada carro passou por rigorosas inspeções e está pronto para a estrada.
+                        Visite-nos hoje mesmo e descubra o carro dos seus sonhos na nossa loja!</p>
+                   
+                <!-- Definição do Slider -->
+                <section class="col-12 col-md-6">
+                    <section class="carousel slide" id="#rkz" data-bs-interval="1100" data-bs-ride="carousel">
+                        <section class="carousel-indicators">
+
+
+
+
+                            <button type="button" data-bs-target="#slider" data-bs-slide-to="1"
+                                aria-label="Slide 2"></button>
+
+                            <button type="button" data-bs-target="#slider" data-bs-slide-to="2"
+                                aria-label="Slide 3"></button>
+
+                            <button type="button" data-bs-target="#slider" data-bs-slide-to="3"
+                                aria-label="Slide 4"></button>
+                        </section>
+
+
+
+                    </section>
+                </section>
+
+            </section>
+
+        </section>
+
+    </section>
+    </section>
+    </section>
+    </section>
+
+
+    <section class="container" id="manga-container">
+        <section class="col-12" id="featured-images">
+            <section class="row g-5">
+
+                <section class="col-12 col-md-4">
+                    <a href="./html/dica.html">
+                        <img src="./images/bmw novo.jpg " alt="" class="img-fluid">
+                        <section class="banner-content">
+                            <p>Categoria</p>
+                            <h2>Nome do projeto</h2>
+
+                        </section>
+                    </a>
+                    <section class="row">
+                        <i class="bi bi-database-fill-up col-sm-1"></i>
+                        <h3 class="col-sm-6" class="fonte">BMW 760i </h3>
+
+                    </section>
+
+                    <h3>A partir de R$: 1.075.100 a vista*</h3>
+
+
+                </section>
+
+
+                <section class="col-12 col-md-4">
+                    <a href="./html/rkzin.html">
+                        <img src="./images/novo 5.jpg" alt="" class="img-fluid">
+                        <section class="banner-content">
+                            <p></p>
+                            <h2></h2>
+
+                        </section>
+                    </a>
+                    <section class="row">
+                        <i class="bi bi-database-fill-up col-sm-1"></i>
+                        <h3 class="col-sm-6" class="fonte">McLaren GTR </h3>
+
+                    </section>
+
+                    <h3>A partir de R$: R$ 9.900.000 a vista*</h3>
+
+                    
+                </section>
+
+                <section class="col-12 col-md-4">
+                    <a href="./html/index3.html">
+                        <img src="./images/carro novo3.jpg" alt="" class="img-fluid">
+                        <section class="banner-content">
+                            <p>Categoria</p>
+                            <h2>Nome do projeto</h2>
+
+                        </section>
+                    </a>
+                    <section class="row">
+                        <i class="bi bi-database-fill-up col-sm-1"></i>
+                        <h3 class="col-sm-6" class="fonte">PORSCHE MACAN GTS </h3>
+
+                    </section>
+
+                    <h3>A partir de R$: 710.000 a vista*</h3>
+
+                    
+                </section>
+
+                <section class="col-12 col-md-4">
+                    <a href="./html/index4.html">
+                        <img src="./images/novo 4.jpg" alt="" class="img-fluid">
+                        <section class="banner-content">
+                            <p>Categoria</p>
+                            <h2>Nome do projeto</h2>
+
+                        </section>
+                    </a>
+                    <section class="row">
+                        <i class="bi bi-database-fill-up col-sm-1"></i>
+                        <h3 class="col-sm-6" class="fonte">Porsche Panamera </h3>
+
+                    </section>
+
+                    <h3>A partir de R$ 1.354.020 a vista*</h3>
+
+
+                </section>
+
+
+                <section class="col-12 col-md-4">
+                    <a href="./html/index5.html">
+                        <img src="./images/rolls-royce.jpeg" alt="" class="img-fluid">
+                        <section class="banner-content">
+                            <p>Categoria</p>
+                            <h2>Nome do projeto</h2>
+
+                        </section>
+                    </a>
+                    <section class="row">
+                        <i class="bi bi-database-fill-up col-sm-1"></i>
+                        <h3 class="col-sm-6" class="fonte">Rolls-Royce </h3>
+
+                    </section>
+
+                    <h3>A partir de R$ 6.390.000,00 a vista*</h3>
+
+
+                </section>
+
+                <section class="col-12 col-md-4">
+                    <a href="./html/index6.html">
+                        <img src="./images/novo 8.jpeg" alt="" class="img-fluid">
+                        <section class="banner-content">
+                            <p>Categoria</p>
+                            <h2>Nome do projeto</h2>
+
+                        </section>
+                    </a>
+                    <section class="row">
+                        <i class="bi bi-database-fill-up col-sm-1"></i>
+                        <h3 class="col-sm-6" class="fonte">Porsche Taycan </h3>
+
+                    </section>
+
+                    <h3>A partir de R$ 629.000.000 a vista*</h3>
+
+
+                </section>
+
+
+                <section class="col-12 col-md-4">
+                    <a href="./html/index7.html">
+                        <img src="./images/novo 7.jpeg" alt="" class="img-fluid">
+                        <section class="banner-content">
+                            <p>Categoria</p>
+                            <h2>Nome do projeto</h2>
+
+                        </section>
+                    </a>
+                    <section class="row">
+                        <i class="bi bi-database-fill-up col-sm-1"></i>
+                        <h3 class="col-sm-6" class="fonte">Hummer 350 EV Edition </h3>
+
+                    </section>
+
+                    <h3>A partir de R$ 1.199.000,00 a vista</h3>
+
+
+                </section>
+
+
+
+                <section class="col-12 col-md-4">
+                    <a href="./html/index8.html">
+                        <img src="./images/novo 6.jpg" alt="" class="img-fluid">
+                        <section class="banner-content">
+                            <p>Categoria</p>
+                            <h2>Nome do projeto</h2>
+
+                        </section>
+                    </a>
+                    <section class="row">
+                        <i class="bi bi-database-fill-up col-sm-1"></i>
+                        <h3 class="col-sm-6" class="fonte">BMW 850i</h3>
+
+                    </section>
+
+                    <h3>A partir de R$ 693.842 a vista*</h3>
+
+
+                </section>
+
+
+
+                <section class="col-12 col-md-4">
+                    <a href="./html/index9.html">
+                        <img src="./images/novo 9.jpg" alt="" class="img-fluid">
+                        <section class="banner-content">
+                            <p>Categoria</p>
+                            <h2>Nome do projeto</h2>
+
+                        </section>
+                    </a>
+                    <section class="row">
+                        <i class="bi bi-database-fill-up col-sm-1"></i>
+                        <h3 class="col-sm-6" class="fonte">Corvette Stingray </h3>
+
+                    </section>
+
+                    <h3>A partir de R$ 2.400.000 a vista*</h3>
+
+
+                </section>
+
+
+
+
+
+                <!-- Fim do container Informações -->
+            </section>
+        </section>
+
+
+        <!-- FOOTER -->
+
+        <!-- Informações -->
+        <section class="col-12">
+            <h2 class="title primary-color"></h2>
+            <p class="subtitle-secondary-color">Ligue para a nossa agencia <i class="bi bi-telephone-fill"></i></p>
+        </section>
+
+        <footer class="container-fluid bg-dark-color" id="footer">
+            <section class="container">
+                <section class="row">
+                    <!-- FOOTER TOP -->
+                    <section class="col-12" id="footer-top">
+                        <section class="row justify-content-between">
+                            <section class="col-4">
+                                <h2>
+                                    ShopCar
+                                </h2>
+                            </section>
+
+                            <section class="col-12 col-md-4">
+                                <p>A loja é extremamente confiável e possui um grande prestígio no mercado de trabalho.
+                                    Sua reputação é construída com base na confiança e na qualidade dos serviços
+                                    prestados, o que a torna uma referência no setor. A loja se destaca não apenas pela
+                                    excelência de seus produtos, mas também pelo compromisso em oferecer o melhor
+                                    atendimento ao cliente. Isso a torna uma escolha confiável para muitos clientes e
+                                    profissionais do setor...</p>
+                                <a href="" class="btn btn-primary"></a>
+                            </section>
+
+                            <section class="col-4" id="social-icons">
+                                <i class="bi bi-facebo
+                                ok"></i>
+                                <i class="bi bi-instagram"></i>
+                                <i class="bi bi-youtube"></i>
+                                <i class="bi bi-twitter"></i>
+                                <i class="bi bi-car-front"></i>
+                            </section>
+                        </section>
+                    </section>
+
+                    <!--modal 1-->
+                    <div class="modal fade" id="modal1" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary"
+                                        data-bs-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-primary">Save changes</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--Modal 2-->
+                    <div class="modal fade" id="modal2" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary"
+                                        data-bs-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-primary">Save changes</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--Modal 3-->
+                    <div class="modal fade" id="modal3" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary"
+                                        data-bs-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-primary">Save changes</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--Modal 4-->
+                    <div class="modal fade" id="modal4" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary"
+                                        data-bs-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-primary">Save changes</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!-- Bootstrap JS-->
+                    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+                        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+                        crossorigin="anonymous" defer></script>
+</body>
+
+</html>

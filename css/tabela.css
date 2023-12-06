@@ -1,0 +1,62 @@
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+table, th, td {
+  border: 1px solid black;
+  text-decoration: none;
+}
+
+th, td {
+  padding: 8px;
+}
+
+h1 {
+  text-align: center;
+}
+
+#addItemForm input {
+  margin-right: 10px;
+}
+
+#addItemForm button {
+  margin-top: 10px;
+}
+
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+}
+table th,
+table td{
+    font-size: 20px;
+    padding: 10px 15px;
+    border: solid 1px #999898;
+}
+
+button{
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: #07a;
+    margin: 3px;
+    padding: 10px 15px;
+    color: white;
+    text-decoration: none;
+}
+
+input{
+    border: solid 1px #ccc;
+    border-radius: 4px;
+    padding: 10px;
+}
+
+.label>input{
+    flex: 1;
+}
+.itemBody{
+
+  display: flex;
+}

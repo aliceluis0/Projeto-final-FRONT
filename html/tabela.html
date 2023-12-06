@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Tabela de Carros</title>
+  <link rel="stylesheet" type="text/css" href="../css/tabela.css">
+</head>
+<body>
+  <h1>Tabela de Carros</h1>
+
+  <table id="itemTable">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Modelo</th>
+        <th>Marca</th>
+        <th>Ano</th>
+        <th>Cor</th>
+        <th>Ações</th>
+      </tr>
+    </thead>
+    <tbody id="itemBody">
+    </tbody>
+  </table>
+
+  <form id="addItemForm">
+    <label for="idInput">ID:</label>
+    <input type="text" id="idInput" required placeholder="ID">
+
+    <label for="modeloInput">Modelo:</label>
+    <input type="text" id="modeloInput" required placeholder="Modelo">
+
+    <label for="marcaInput">Marca:</label>
+    <input type="text" id="marcaInput" required placeholder="Marca">
+
+    <label for="anoInput">Ano:</label>
+    <input type="text" id="anoInput" required placeholder="Ano">
+
+    <label for="corInput">Cor</label>
+    <input type="text" id="corInput" required placeholder="Cor">
+
+    <button type="submit">Adicionar Item</button>
+  </form>
+
+  <script src="../js/tabela.js"></script>
+  <script src="../js/dados.js"></script>
+</body>
+</html>
+
+
+
+
+

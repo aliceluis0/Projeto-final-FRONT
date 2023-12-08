@@ -31,7 +31,7 @@ app.get("/produtos",(req, res)=>{
 })
 
 // Rota POST para login
-app.post('../index.html', (req, res) => {
+app.post('/rota', (req, res) => {
     const { email, senha } = req.body;
   
     console.log(req.bod);
